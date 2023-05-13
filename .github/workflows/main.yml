@@ -1,0 +1,17 @@
+- name: generate-changelog-action
+  # You may pin to the exact commit or the version.
+  # uses: ScottBrenner/generate-changelog-action@f17b985298496cf8df35aa1104091c51e7bfea95
+  uses: ScottBrenner/generate-changelog-action@v1.3.3
+  with:
+    # The path for the package.json if it is not in root
+    package-dir: # optional, default is package.json
+    # The tag to generate changelog from
+    from-tag: # optional, default is 
+    # The tag to generate changelog up to
+    to-tag: # optional, default is 
+    # Type of changelog: patch, minor, or major
+    type: # optional, default is 
+    # Exclude selected commit types (comma separated)
+    exclude: # optional, default is 
+    # Allow unknown commit types
+    allow-unknown: # optional, default is 
